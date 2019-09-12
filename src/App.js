@@ -1,20 +1,24 @@
 import React from 'react';
 import './App.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement } from './actions';
+import Header from './components/layout/header/header';
+import Admin from './components/admin/Admin';
+// import Hotels from './components/hotels/Hotels';
+// import Rooms from './components/rooms/Rooms';
+// import Users from './components/users/Users';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-  const counter = useSelector(state => state.counter);
-  const isLogged = useSelector(state => state.isLogged);
-  const dispatch = useDispatch();
   return (
-    <div className='App'>
-      <h1>Counter {counter}</h1>
-      <button onClick={() => dispatch(increment(10))}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
-
-      {isLogged ? <h3>Valuable information I shouldn't see</h3> : ''}
-    </div>
+    <Router>
+      <div className='App'>
+        <Header />
+        <div className='container'>
+          <Switch>
+            <Route path='/admin' component={Admin} />
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 

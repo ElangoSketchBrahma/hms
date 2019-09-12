@@ -6,7 +6,9 @@ const header = props => {
   let admin = false;
   if (window.location.pathname.indexOf('/admin') > -1) {
     admin = true;
+    console.log('worked');
   }
+  console.log('not worked');
   return (
     <header className='header'>
       <nav className='navbarr'>
@@ -17,17 +19,24 @@ const header = props => {
           {admin ? (
             <ul>
               <li>
-                <Link to='/admin/hotels'>Hotel</Link>
+                <Link to='/admin/hotels'>Hotels</Link>
               </li>
               <li>
-                <Link to='/admin/rooms'>Room</Link>
+                <Link to='/admin/rooms'>Rooms</Link>
               </li>
               <li>
-                <Link to='/admin/users'>User</Link>
+                <Link to='/admin/users'>Users</Link>
               </li>
             </ul>
           ) : (
-            ''
+            <ul>
+              <li>
+                <a href='/admin'>Admin</a>
+              </li>
+              <li>
+                <a href='/user'>User</a>
+              </li>
+            </ul>
           )}
         </div>
       </nav>
