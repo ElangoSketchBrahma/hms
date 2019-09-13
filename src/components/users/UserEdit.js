@@ -41,7 +41,7 @@ const UserEdit = props => {
           <label htmlFor='name'>Firstname:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='firstName'
             value={firstName}
@@ -52,7 +52,7 @@ const UserEdit = props => {
           <label htmlFor='lastname'>Lastname:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='lastName'
             value={lastName}
@@ -63,14 +63,14 @@ const UserEdit = props => {
           <label htmlFor='email'>Email:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='email'
             value={email}
             onChange={changeEmail}
           />
         </div>
-        <button type='submit' className='btn btn-success btn-lg'>
+        <button type='submit' className='btn btn-success'>
           Update User
         </button>
       </form>

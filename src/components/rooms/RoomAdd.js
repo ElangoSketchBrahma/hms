@@ -36,7 +36,7 @@ const RoomAdd = props => {
         <div className='form-group'>
           <label htmlFor='Hotel'>Select Hotel</label>
           <select
-            className='form-control form-control-lg'
+            className='form-control'
             name='hotelId'
             required
           >
@@ -53,7 +53,7 @@ const RoomAdd = props => {
             type='number'
             name='roomNo'
             id='roomNo'
-            className='form-control form-control-lg'
+            className='form-control'
           />
         </div>
         <div className='form-group'>
@@ -62,19 +62,19 @@ const RoomAdd = props => {
             type='number'
             name='beds'
             id='beds'
-            className='form-control form-control-lg'
+            className='form-control'
           />
         </div>
         <div className='form-group'>
           <label htmlFor='desc'>Description:</label>
           <textarea
-            className='form-control form-control-lg'
+            className='form-control'
             id='desc'
             rows='8'
             name='desc'
           ></textarea>
         </div>
-        <button className='btn btn-success btn-lg mt-5' type='submit'>
+        <button className='btn btn-success mt-5' type='submit'>
           Add Room
         </button>
       </form>

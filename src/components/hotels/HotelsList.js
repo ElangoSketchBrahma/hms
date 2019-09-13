@@ -10,7 +10,7 @@ const HotelsList = () => {
       <h1 className='text-center display-4'>Hotels List</h1>
       <Link
         to='/admin/hotels/add'
-        className='btn btn-primary float-right mb-3 btn-lg'
+        className='btn btn-primary float-right mb-3'
       >
         Add Hotel
       </Link>
@@ -36,7 +36,7 @@ const HotelsList = () => {
                 <td>
                   <Link
                     to={`/admin/hotels/edit/${hotel.id}`}
-                    className='btn btn-success btn-lg'
+                    className='btn btn-success'
                   >
                     Edit
                   </Link>
@@ -44,7 +44,7 @@ const HotelsList = () => {
                 <td>
                   <Link
                     to={`/admin/hotels/delete/${hotel.id}`}
-                    className='btn btn-danger btn-lg'
+                    className='btn btn-danger'
                   >
                     Delete
                   </Link>

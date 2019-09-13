@@ -14,6 +14,7 @@ const RoomEdit = props => {
   console.log(props);
   if (selectedRoom.length === 0) {
     window.location.href = '/admin/rooms';
+    // return <Redirect to='/login' />;
   }
 
   const [roomNo, setRoomNo] = useState(selectedRoom[0].roomNo);
@@ -59,7 +60,7 @@ const RoomEdit = props => {
         <div className='form-group'>
           <label htmlFor='Hotel'>Select Hotel</label>
           <select
-            className='form-control form-control-lg'
+            className='form-control'
             name='hotelId'
             required
           >
@@ -76,7 +77,7 @@ const RoomEdit = props => {
             type='number'
             name='roomNo'
             id='roomNo'
-            className='form-control form-control-lg'
+            className='form-control'
             value={roomNo}
             onChange={changeRoomNo}
           />
@@ -87,7 +88,7 @@ const RoomEdit = props => {
             type='number'
             name='beds'
             id='beds'
-            className='form-control form-control-lg'
+            className='form-control'
             value={beds}
             onChange={changeBeds}
           />
@@ -95,7 +96,7 @@ const RoomEdit = props => {
         <div className='form-group'>
           <label htmlFor='desc'>Description:</label>
           <textarea
-            className='form-control form-control-lg'
+            className='form-control'
             id='desc'
             rows='8'
             name='desc'
@@ -103,7 +104,7 @@ const RoomEdit = props => {
             value={desc}
           ></textarea>
         </div>
-        <button className='btn btn-success btn-lg mt-5' type='submit'>
+        <button className='btn btn-success mt-5' type='submit'>
           Update Room
         </button>
       </form>

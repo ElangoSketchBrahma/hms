@@ -1,5 +1,5 @@
 .header {
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   background: #cd5639;
 }
 
@@ -16,8 +16,8 @@
 }
 
 .header .header_logo {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .header .header_logo img {
@@ -40,12 +40,11 @@
 }
 
 .header .header_nav ul li:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .header .header_nav ul li a {
   text-decoration: none;
-  font-size: 1.6rem;
   color: #fff;
   display: inline-block;
 }

@@ -43,7 +43,7 @@ const HotelEdit = props => {
           <label htmlFor='name'>Name:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='Hname'
             value={name}
@@ -54,7 +54,7 @@ const HotelEdit = props => {
           <label htmlFor='address'>Address:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='address'
             value={address}
@@ -65,14 +65,14 @@ const HotelEdit = props => {
           <label htmlFor='contact'>Contact:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='contact'
             value={contact}
             onChange={changeContact}
           />
         </div>
-        <button type='submit' className='btn btn-success btn-lg'>
+        <button type='submit' className='btn btn-success'>
           Update Hotel
         </button>
       </form>

@@ -14,10 +14,10 @@ const UserDelete = props => {
   return (
     <div>
       <h2>Are you sure you want to delete this user ?</h2>
-      <button className='btn btn-lg btn-success mr-3 mt-5' onClick={no}>
+      <button className='btn btn-success mr-3 mt-5' onClick={no}>
         No, Keep it
       </button>
-      <button className='btn btn-lg btn-danger mt-5' onClick={yes}>
+      <button className='btn btn-danger mt-5' onClick={yes}>
         Yes, Delete
       </button>
     </div>

@@ -24,7 +24,7 @@ const UserAdd = props => {
           <label htmlFor='firstname'>Firstname:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='firstName'
           />
@@ -33,7 +33,7 @@ const UserAdd = props => {
           <label htmlFor='lastname'>Lastname:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='lastName'
           />
@@ -42,12 +42,12 @@ const UserAdd = props => {
           <label htmlFor='email'>E-mail:</label>
           <input
             type='email'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='email'
           />
         </div>
-        <button type='submit' className='btn btn-success btn-lg'>
+        <button type='submit' className='btn btn-success'>
           Add User
         </button>
       </form>

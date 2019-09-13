@@ -26,7 +26,7 @@ const HotelAdd = props => {
           <label htmlFor='name'>Name:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='Hname'
           />
@@ -35,7 +35,7 @@ const HotelAdd = props => {
           <label htmlFor='address'>Address:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='address'
           />
@@ -44,12 +44,12 @@ const HotelAdd = props => {
           <label htmlFor='contact'>Contact:</label>
           <input
             type='text'
-            className='form-control form-control-lg'
+            className='form-control'
             required
             name='contact'
           />
         </div>
-        <button type='submit' className='btn btn-success btn-lg'>
+        <button type='submit' className='btn btn-success'>
           Add Hotel
         </button>
       </form>
