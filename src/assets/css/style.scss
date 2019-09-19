@@ -1,0 +1,18 @@
+// variables
+$black_color: rgba(0, 0, 0, 0.87);
+$white_color: rgb(255, 255, 255);
+$default_font_size: 1.6rem;
+$orange_color:#cd5639;
+// fonts
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url('../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url('../fonts/Poppins-SemiBold.ttf');
+}
